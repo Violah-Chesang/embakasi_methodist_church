@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.cover{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(102, 54, 102);
+    position: relative;
+}
+
+.container{
+    width: 80%;
+    /* height: 100vh; */
+    position: relative;
+    margin: auto;
+    padding: 10px, 0;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.container h3{
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.active, .nav li:hover{
+    background-color: rgb(102, 54, 102);
+    border-radius: 4px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.nav img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* drop down menu */
+.sub-menu-1{
+    display: none;
+    z-index: 2;
+}
+
+.nav li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: rgb(102, 54, 102);
+    margin-top: 10px;
+    margin-left: -12px;
+
+}
+
+.nav li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.nav li:hover .sub-menu-1 li{
+    display: block; /*don't forget to add this */
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.nav li:hover .sub-menu-1 li:last-child{
+    border-bottom: none;
+}
+
+
+.content{
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.content p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;;
+}
+
+.back-video{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-repeat: repeat;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+}
+
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+
+/* contact us page */
+.contact-backround{
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+    background-image: url('images/contact-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.55);
+    margin-top: 15%;
+    margin: auto;
+}
+
+.form-area{
+    flex-basis: 47%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.form-area h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.input-group input, textarea{
+ width: 100%;
+ outline: 0;
+ border: 2px solid rgb(54, 13, 49);
+ background: transparent;
+ color: #fff;
+ font-size: 20px;
+ font-weight: 600;
+}
+
+.input-group label{
+position: absolute;
+color: #fff;
+font-size: 15px;
+font-weight: 600;
+height: 100%;
+left: 0;
+top: 0;
+padding: 10px;
+cursor: text;
+transition: 0.2s;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+.form-area button{
+    width: 100%;
+    font-weight: 900;
+    margin-top: 2px;
+    padding: 10px;
+    color: #000;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.google-map{
+    flex-basis: 47%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.google-map p{
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+/* about */
+.about-background{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('images/Embakasi-church.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.about{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin-top: 15%;
+    margin: auto;
+    color: #fff;
+
+}
+
+.about h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+.who-are-we{
+    width: 70%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+
+.history{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.mission{
+    flex-basis: 31%;
+    box-sizing: border-box;
+    padding: 20x;
+    margin: 20px;
+}
+.vision{
+    flex-basis: 31%;
+    box-sizing: border-box;
+    padding: 20x;
+    margin: 20px;
+
+}
+
+.vision img{
+    width: 300px;
+    height: 150px;
+}
+
+.core-values{
+    flex-basis: 31%;
+    box-sizing: border-box;
+    padding: 10x;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+/* Fellowship page */
+.fellowship-background{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('images/bible.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.fellowship{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fellowship-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+}
+
+.fellowship-col img{
+    width: 100%;
+    height: 48%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Doctrines page */
+.doctrines h1{
+    text-align: center;
+    color: rgb(63, 53, 53);
+}
+
+.doctrines img{
+    width: 400px;
+}
+
+
+

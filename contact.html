@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;700&family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
+    
+    <title>MCK Embakasi-Contact page</title>
+
+    <link rel="icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contact-backround">
+       
+        
+        <div class="container">
+            <!-- Logo and navbar -->
+            <div class="header">
+                <div class="nav">
+                    <img src="images/logo.jpeg" alt="MCK Logo">
+
+                    <!-- nav bar -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="#">About Us</a>
+                        
+                                <div class="sub-menu-1">
+                                    <ul>
+                                        <li><a href="about.html">Who are we</a></li>
+                                        <li><a href="doctrines.html">doctrines</a></li>
+                                        <li><a href="teach.html">Teachings</a></li>
+                                        <li><a href="#">Church leadership</a></li>
+                                        <li><a href="#">Resources</a></li>
+                                    </ul>
+                                </div>
+                        
+                        </li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="fellowships.html">Fellowships</a></li>
+                        <li><a href="#">Sermons</a></li>
+                        <li><a href="#">MCK Academy</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="contact">
+                <form class="form-area" onsubmit="sendEmail(); reset(); return false;">
+                    <h2>Get in touch:</h2>
+                    <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label for="name">First and Last Name</label>
+                    </div>
+
+
+                    <div class="input-group">
+                        <input type="text" id="number" required>
+                        <label for="number">Phone Number</label>
+                    </div>
+
+
+                    <div class="input-group">
+                        <input type="text" id="email">
+                        <label for="email">E-mail Address</label>
+                    </div>
+
+
+                    <div class="input-group">
+                        <textarea id="comment" cols="30" rows="6"></textarea>
+                        <label for="comment">Comment/Inquiry</label>
+                    </div>
+
+                    <button type="submit">SUBMIT</button>
+                </form>
+
+                <div class="google-map">
+                    <p><b>You can reach us through:</b></br>
+                    <b>Phone Number</b>: 0110547232</br>
+                    <b>Email Address</b>: info@mckembakasichurch.co.ke
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.777000837149!2d36.913418773228564!3d-1.3090689386882342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f12fe2816fb51%3A0xdef6cf4f632273f6!2sMCK%20Embakasi.!5e0!3m2!1sen!2ske!4v1672425700503!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "chesangv9@gmail.com",
+                    Password : "2012mutugi",
+                    To : 'chesangv21@gmail.com',
+                    From : document.getElementById('email').value,
+                    Subject : "Methodist Church Form Contact",
+                    Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+
+        }
+    </script>
+   </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Learning</title>
+
+    <style type="text/css">
+        .cover{
+            position: relative;
+            width: 60%;
+            background-color: rgb(211, 64, 64);
+            margin: auto;
+            padding: 1px;
+        }
+        .display p{
+            position: relative;
+            width: 60%;
+            height: 80px;
+            background-color: rgb(247, 240, 240);
+            margin: auto;
+            padding-top: 75px;
+            box-sizing: border-box;
+        }
+        .numbers{
+            width: 60%;
+            position: relative;
+            margin: auto;
+        }
+        .numbers button{
+            padding: 20px;
+            width: 100px;
+            margin: 28px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <div class="wrapper">
+            <div class="display">
+                <p></p>
+            </div>
+            <div class="numbers">
+                <button id="btn0">0</button></br>
+                <button id="btn1">1</button>
+                <button id="btn2">2</button>
+                <button id="btn3">3</button></br>
+                <button id="btn4">4</button>
+                <button id="btn5">5</button>
+                <button id="btn6">6</button></br>
+                <button id="btn7">7</button>
+                <button id="btn8">8</button>
+                <button id="btn9">9</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let numbers = document.querySelector('.numbers');
+        // console.log(numbers.children);
+
+
+        for(i = 0; i <= numbers.length; i++){
+            btn = numbers[i]
+            console.log(btn);
+        }
+
+        
+
+        //when a button is clicked it changes the background color
+        // numbers.children.addEventListener('click', ()=>{
+          
+        // });
+        
+
+    </script>
+</body>
+</html>

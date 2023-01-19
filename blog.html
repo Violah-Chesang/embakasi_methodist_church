@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <form class="my-form">
+        <label for="blog-heading">Blog Heading</label>
+        <input type="text" id="blog-heading"></br>
+        
+        <label for="blog-content">Blog content</label></br>
+        <textarea name="blog-content" id="blog-content" cols="70" rows="20" ></textarea></br>
+
+        <button type="submit" id="submit-button">Post</button>
+        <button id="greet">Welcome</button>
+    
+    </form>
+    <script>
+
+        let btn = document.querySelector('#submit-button');
+        let myForm = document.querySelector('.my-form');
+
+
+
+        // btn.addEventListener('click', (e) => {
+        //     e.preventDefault();
+
+        //     console.log(document.querySelector('#blog-content').value);
+
+        //     document.querySelector('#submit-button').textContent = "Write new blog";
+        //     document.querySelector('body').classList.add('bg-dark');
+
+        //     myForm.style.background = 'green';//changes th background color of th form to green
+            
+
+            
+        // });
+        // document.querySelector('#greet').textContent = 'Good Bye'
+        // function greet(click, e){
+        //     e.preventDefault();
+        //     let greetMe = document.querySelector('#greet');
+
+        //     greetMe.textContent= 'Good Bye!';
+        // }
+
+        //when a user enters text on the text area and presses post, the txxt will be displayed at the bottom
+        let myContent = document.querySelector('#blog-content').value;
+         btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            let textArea = document.createElement('textarea');
+
+            body.append(textArea);
+
+            textArea.append(document.createTextNode(myContent));
+            msg.append(textArea);
+         } );
+    </script>
+</body>
+</html>
