@@ -362,6 +362,21 @@ textarea:valid~label{
 }
 .ushering{
     position: relative;
-    margin: -50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ushering img{
+    width: 100px;
+    height: 600px;
+    flex-basis: 48%;
+    padding: 30px;
+
+}
+.ushering-col{
+    flex-basis: 48%;
+    padding: 60px;
+    text-align: left;
 }
 
