@@ -341,6 +341,7 @@ textarea:valid~label{
 .fellowship-col{
     flex-basis: 31%;
     border-radius: 10px;
+    margin-bottom: -100px;
 }
 
 .fellowship-col img{
@@ -359,6 +360,8 @@ textarea:valid~label{
 .doctrines img{
     width: 400px;
 }
-
-
+.ushering{
+    position: relative;
+    margin: -50px;
+}
 
