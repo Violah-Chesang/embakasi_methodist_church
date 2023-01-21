@@ -351,6 +351,10 @@ textarea:valid~label{
     box-sizing: border-box;
 }
 
+.fellowship h2{
+    padding-top: 80px;
+}
+
 /* Doctrines page */
 .doctrines h1{
     text-align: center;
